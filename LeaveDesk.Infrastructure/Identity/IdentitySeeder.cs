@@ -20,7 +20,7 @@ public static class IdentitySeeder
             }
         }
 
-        const string hrAdminEmail = "hradmin@leavedesk.local";
+        const string hrAdminEmail = "techgrit.hradmin@yopmail.com";
         if (await userManager.FindByEmailAsync(hrAdminEmail) is null)
         {
             var hrAdmin = new ApplicationUser
@@ -30,7 +30,7 @@ public static class IdentitySeeder
                 EmailConfirmed = true
             };
 
-            var result = await userManager.CreateAsync(hrAdmin, "HrAdmin@123");
+            var result = await userManager.CreateAsync(hrAdmin, "Techgrit@123");
             if (result.Succeeded)
             {
                 await userManager.AddToRoleAsync(hrAdmin, "HRAdmin");
