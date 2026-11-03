@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="LeaveDesk.Api/LeaveDesk.Api.csproj" />
+  <Project Path="LeaveDesk.Application/LeaveDesk.Application.csproj" />
+  <Project Path="LeaveDesk.Domain/LeaveDesk.Domain.csproj" />
+  <Project Path="LeaveDesk.Infrastructure/LeaveDesk.Infrastructure.csproj" />
+  <Project Path="LeaveDesk.Tests/LeaveDesk.Tests.csproj" />
+</Solution>
