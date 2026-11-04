@@ -35,8 +35,8 @@ public static class BusinessDataSeeder
 
         await context.SaveChangesAsync();
 
-        var manager1 = await CreateEmployeeWithAccountAsync(userManager, context, "Priya Sharma", "priya.manager@leavedesk.local", "Manager@123", engineering.Id, null, "Manager");
-        var manager2 = await CreateEmployeeWithAccountAsync(userManager, context, "Rajesh Kumar", "rajesh.manager@leavedesk.local", "Manager@123", sales.Id, null, "Manager");
+        var manager1 = await CreateEmployeeWithAccountAsync(userManager, context, "Priya Sharma", "priya.manager@yopmail.com", "Manager@123", engineering.Id, null, "Manager");
+        var manager2 = await CreateEmployeeWithAccountAsync(userManager, context, "Rajesh Kumar", "rajesh.manager@yopmail.com", "Manager@123", sales.Id, null, "Manager");
 
         var employeeNames = new[] { "Asha Patel", "Bala Krishnan", "Chetan Rao", "Divya Nair", "Esha Gupta", "Farid Khan" };
         for (var i = 0; i < employeeNames.Length; i++)
@@ -46,7 +46,7 @@ public static class BusinessDataSeeder
             var emailName = employeeNames[i].Split(' ')[0].ToLowerInvariant();
 
             await CreateEmployeeWithAccountAsync(
-                userManager, context, employeeNames[i], $"{emailName}.employee@leavedesk.local", "Employee@123",
+                userManager, context, employeeNames[i], $"{emailName}.employee@yopmail.com", "Employee@123",
                 department.Id, manager.Id, "Employee");
         }
     }

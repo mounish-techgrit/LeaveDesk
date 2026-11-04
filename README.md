@@ -59,10 +59,10 @@ LeaveDesk.Tests ─────────> LeaveDesk.Application
 | Role | Email | Password |
 | --- | --- | --- |
 | HR Admin | `techgrit.hradmin@yopmail.com` | `HrAdmin@123` |
-| Manager (Engineering) | `priya.manager@leavedesk.local` | `Manager@123` |
-| Manager (Sales) | `rajesh.manager@leavedesk.local` | `Manager@123` |
-| Employee ×3 (Engineering, report to Priya) | `asha.employee@`, `bala.employee@`, `chetan.employee@leavedesk.local` | `Employee@123` |
-| Employee ×3 (Sales, report to Rajesh) | `divya.employee@`, `esha.employee@`, `farid.employee@leavedesk.local` | `Employee@123` |
+| Manager (Engineering) | `priya.manager@yopmail.com` | `Manager@123` |
+| Manager (Sales) | `rajesh.manager@yopmail.com` | `Manager@123` |
+| Employee ×3 (Engineering, report to Priya) | `asha.employee@`, `bala.employee@`, `chetan.employee@yopmail.com` | `Employee@123` |
+| Employee ×3 (Sales, report to Rajesh) | `divya.employee@`, `esha.employee@`, `farid.employee@yopmail.com` | `Employee@123` |
 
 Note: the HR Admin account is Identity-only (no linked `Employee` profile) — this is intentional, see **Known limitations** below.
 
